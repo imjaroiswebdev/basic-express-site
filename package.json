@@ -1,0 +1,21 @@
+{
+  "name": "pc-repair-shop",
+  "version": "1.0.0",
+  "description": "Basic Web Site in NodeJS",
+  "main": "app.js",
+  "author": "José Antonio Reyes <imjaroiswebdev@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "nodemailer": "^4.0.1",
+    "pug": "^2.0.0-rc.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
