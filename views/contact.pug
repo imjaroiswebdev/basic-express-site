@@ -1,0 +1,30 @@
+extends layout
+
+block content
+	// Jumbotron
+	.jumbotron
+		h1 #{mainTitle}
+		p.lead
+			| Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.
+	// Contact form.row
+	.col-md-offset-2.col-md-8
+		form.form-horizontal(method='post', action='contact/send')
+			.form-group
+				label.col-sm-2.control-label(for='sendername') Your name
+				.col-sm-10
+					input#sendername.form-control(type='text', placeholder='Name', name='sendername')
+			.form-group
+				label.col-sm-2.control-label(for='senderemail') Your email
+				.col-sm-10
+					input#senderemail.form-control(type='email', placeholder='Email', name='senderemail')
+			.form-group
+				label.col-sm-2.control-label(for='senderphone') Your phone
+				.col-sm-10
+					input#senderphone.form-control(type='tel', placeholder='Phone', name='senderphone')
+			.form-group
+				label.col-sm-2.control-label(for='sendermsg') What is the problem?
+				.col-sm-10
+					textarea#sendermsg.form-control(placeholder='Describe your computer issue please...', rows='5', name='sendermsg')
+			.form-group
+				.col-sm-offset-2.col-sm-10
+					input.btn.btn-primary(type='submit', value='send')
